@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love ❤️</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #ffe6e9;
+            color: #d63384;
+            padding: 30px;
+        }
+        h1 {
+            font-size: 2.5em;
+            animation: heartbeat 1.5s infinite;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        .message-box {
+            background-color: white;
+            border-radius: 15px;
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+        .message-box p {
+            font-size: 1.2em;
+            color: #d63384;
+            font-weight: bold;
+            line-height: 1.6;
+        }
+        .image-container {
+            margin: 20px 0;
+        }
+        img {
+            width: 250px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            margin-top: 10px;
+            display: none; /* Hide images initially */
+        }
+        .caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #ff4d6d;
+            margin-top: 15px;
+        }
+        .video-section {
+            margin-top: 30px;
+        }
+        button {
+            padding: 12px 25px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #ff4d6d;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #d63384;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>For My Special One ❤️</h1>
+
+    <div class="message-box">
+        <p>Mero pyari ❤️,</p>
+        <p>Timi mero jindagi ko sabai bhanda special manche hau. Timro muskan le mero din ujyalo bancha, 
+        ani timro aawaz sunna le mero man shanta huncha. Timi bina, sabai kura adhoora jasto lagcha.</p>
+
+        <p>Ma timilai mutu dekhi maya garchu 💖. Timro haat samatna, timro saathma hasna, 
+        ani timi sanga harek pal juna sukhai hos bitauna chaanchu. Timi mero sapana, mero inspiration, 
+        ra mero jindagi ko sabai bhanda ramro bhagya hau.</p>
+
+        <p>Sadhai timro sathma rahanchu, timro hasi ra khusi ko laagi. Mero mutu sirf timro naam le dhadkincha! ❤️</p>
+
+        <p>Maya garchu timilai ajhai dherai! 😘</p>
+    </div>
+
+    <div class="image-container">
+        <div class="caption">🌸 A cute surprise just for you! 🌸</div>
+        <button onclick="revealImage('image1')">Click Karo Surprise Ke Liye 🎁</button>
+        <br>
+        <img id="image1" src="https://i.imgur.com/vR1YPmO.jpeg" alt="First Cute Surprise">
+    </div>
+
+    <div class="image-container">
+        <div class="caption">💖 Just like this, you brighten my world! 💖</div>
+        <button onclick="revealImage('image2')">Click Karo Surprise Ke Liye 🎁</button>
+        <br>
+        <img id="image2" src="https://i.imgur.com/WFqOP07.jpeg" alt="Second Cute Surprise">
+    </div>
+
+    <div class="image-container">
+        <div class="caption">😘 My heart belongs to you forever! 😘</div>
+        <button onclick="revealImage('image3')">Click Karo Surprise Ke Liye 🎁</button>
+        <br>
+        <img id="image3" src="https://i.imgur.com/SPVf5Xw.jpeg" alt="Third Cute Surprise">
+    </div>
+
+    <div class="video-section">
+        <h2>Tumhare Liye Cutiee ❤️</h2>
+        <iframe id="loveVideo" width="560" height="315" 
+            src="https://www.youtube.com/embed/kKljXVVkgS4?autoplay=1&mute=1" 
+            frameborder="0" allow="autoplay" allowfullscreen>
+        </iframe>
+        <br>
+        <button onclick="unmuteVideo()">Click to Play with Sound 🔊</button>
+    </div>
+
+    <script>
+        function revealImage(imageId) {
+            document.getElementById(imageId).style.display = "block";
+        }
+
+        function unmuteVideo() {
+            let iframe = document.getElementById("loveVideo");
+            let newSrc = "https://www.youtube.com/embed/kKljXVVkgS4?autoplay=1";
+            iframe.src = newSrc;  // Reloads with sound enabled
+        }
+    </script>
+
+</body>
+</html>
